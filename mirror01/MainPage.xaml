@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="mirror01.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:mirror01"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="81,382,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Button x:Name="ClickMe" Content="Click Me!"  Margin="81,128,862,608" HorizontalAlignment="Center" Click="ClickMe_Click"/>
+        <TextBlock x:Name="stateButton" HorizontalAlignment="Left" Margin="81,188,0,0" TextWrapping="Wrap" Text="state of the button" VerticalAlignment="Top"/>
+    </Grid>
+</Page>
