@@ -50,6 +50,11 @@ namespace mirror01
             //nothing
         }
 
+        public void method02()
+        {
+
+        }
+
         //EVENTS LISTENED
         public void OnButtonPressed(object source, EventArgs e)
         {
