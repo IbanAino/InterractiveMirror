@@ -41,6 +41,7 @@ namespace mirror01
 
             //subscription of classes to events
             viewModel.textChanged += this.OnTextChanged;
+            viewModel.text02Changed += this.OnText02Changed;
 
 
         }
@@ -60,6 +61,14 @@ namespace mirror01
             await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
             {
                 textBlock.Text = e;
+            });
+        }
+
+        private async void OnText02Changed(string e)
+        {
+            await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
+            {
+                textBlock02.Text = e;
             });
         }
     }

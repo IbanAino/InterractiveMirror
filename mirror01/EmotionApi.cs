@@ -54,7 +54,7 @@ namespace mirror01
             return emotions;
         }
 
-        private async Task<string> MakeRequest(string filePath)
+        public async Task<string> MakeRequest(string filePath)
         {
             // Capture image from camera
             /*CameraCaptureUI captureUI = new CameraCaptureUI();
