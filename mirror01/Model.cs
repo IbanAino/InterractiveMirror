@@ -24,9 +24,11 @@ namespace mirror01
             counter = 0;
 
             Button button = new Button();
+            WarningLight warningLight = new WarningLight();
 
             //subscription of classes to events
             button.buttonPressed += this.OnButtonPressed;
+            button.buttonPressed += warningLight.OnButtonPressed;
 
             //evenement pour vérifier que les infoes transitent bien jusqu'à la mainPage
         }
