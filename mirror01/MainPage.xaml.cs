@@ -36,6 +36,9 @@ namespace mirror01
 
             this.InitializeComponent();
 
+            viewModel = new ViewModel(new Model());
+            this.DataContext = viewModel;
+
             //subscription of classes to events
             viewModel.textChanged += this.OnTextChanged;
 

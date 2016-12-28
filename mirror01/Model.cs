@@ -27,6 +27,8 @@ namespace mirror01
 
             //subscription of classes to events
             button.buttonPressed += this.OnButtonPressed;
+
+            //evenement pour vérifier que les infoes transitent bien jusqu'à la mainPage
         }
 
         //EVENTS LISTENED AND EXECUTED
