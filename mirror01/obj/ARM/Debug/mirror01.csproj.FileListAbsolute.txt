@@ -192,3 +192,4 @@ C:\Users\IBAN\Documents\Ainolabs\miroir interactif\programmation\VisualStudio\mi
 C:\Users\IBAN\Documents\Ainolabs\miroir interactif\programmation\VisualStudio\mirror01\mirror01\obj\ARM\Debug\resources.en-us.resfiles.intermediate
 C:\Users\IBAN\Documents\Ainolabs\miroir interactif\programmation\VisualStudio\mirror01\mirror01\obj\ARM\Debug\ProjectArchitectures.txt
 C:\Users\IBAN\Documents\Ainolabs\miroir interactif\programmation\VisualStudio\mirror01\mirror01\obj\ARM\Debug\mirror01.csprojResolveAssemblyReference.cache
+C:\Users\IBAN\Documents\Ainolabs\miroir interactif\programmation\VisualStudio\mirror01\mirror01\bin\ARM\Debug\Newtonsoft.Json.dll

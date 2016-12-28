@@ -1,0 +1,17 @@
+Face Preview:
+
+Key 1:
+307d40afd08348c491d2b79bfb1af26d
+
+Key 2:
+dc7e46f6659b4956b59feb5406acd927
+
+
+
+Emotion Preview:
+
+Key 1:
+9ff0884560904ea9a4a9c551dbd942da
+
+Key 2:
+f9eeffeb6d8640e68fe900c5b15fdc2a

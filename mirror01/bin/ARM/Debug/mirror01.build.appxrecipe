@@ -70,6 +70,9 @@
     <AppxPackagedFile Include="C:\Users\IBAN\.nuget\packages\Microsoft.Win32.Primitives\4.0.0\lib\dotnet\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IBAN\.nuget\packages\Newtonsoft.Json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IBAN\.nuget\packages\runtime.any.System.Private.DataContractSerialization\4.1.0\lib\netcore50\System.Private.DataContractSerialization.dll">
       <PackagePath>System.Private.DataContractSerialization.dll</PackagePath>
     </AppxPackagedFile>
@@ -333,6 +336,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IBAN\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IBAN\Documents\Ainolabs\miroir interactif\programmation\VisualStudio\mirror01\mirror01\Assets\portrait.jpeg">
+      <PackagePath>Assets\portrait.jpeg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IBAN\Documents\Ainolabs\miroir interactif\programmation\VisualStudio\mirror01\mirror01\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
