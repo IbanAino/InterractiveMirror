@@ -92,22 +92,62 @@ namespace mirror01
 
 
             // Parse the Json code
-            var myJsonString = "[{Id: 42, age: 22}]";
+            var myJsonString = "[{firstObject: {Id: \"42\", age: 22}, secondObject: {nbr: 37, chiffre : 27}}]";
 
-            var items = JsonConvert.DeserializeObject<List<MyClass02>>(myJsonString);
+            var myJsonString02 = "{\"Name\": \"Apple\",\"ExpiryDate\": \"2008-12-28T00:00:00\",\"Price\": \"3.99\",\"Sizes\": [\"Small\",\"Medium\",\"Large\"]}";
+            RootObject items03 = JsonConvert.DeserializeObject<RootObject>(myJsonString02);
 
-            string firstItem = items.First().Id.ToString();
+            //var items02 = JsonConvert.DeserializeObject<List<MyClass02>>(myJsonString);
+
+            //var result = JsonConvert.DeserializeObject<List<Dictionary<string, Dictionary<string, string>>>>(myJsonString);
+
+            //items03.Name
+
+            //Array id = result.ToArray();
+
+            //string age = result.Find(42);
+            //var items01 = JsonConvert.DeserializeObject<List<MyClass01>>(responseContent);
+
+            //dynamic stuff = JsonConvert.DeserializeObject(myJsonString);
+            //string age = stuff.firstObject.age;
+
+            //string firstItem01 = items01.First().top.ToString();
+            //var firstItem02 = items02.first
+            //var result = items02.resu
+            //Array lala = items02.First().firsObject[1];
+            //string retour = lala.GetValue(1).ToString();
 
             // Display response
-            return firstItem;
+            //string retour = firstItem02 + "-------" + responseContent;
+            //return items03.Name.ToString();
+            return items03.Name;
         }
     }
 
     public class MyClass02
     {
-        //[JsonProperty("receiver_id")]
-        public int Id { get; set; }
-        public int age { get; set; }
+        public int Id;
+        public int age;
 
+        public Array[] firsObject = new Array[2];
+
+        public int nbr { get; set; }
+        public int chiffre { get; set; }
+    }
+
+    class RootObject
+    {
+        public string Name;
+        public DateTime ExpiryDate;
+        public string Price;
+        public string[] Sizes = new string[3];
+    }
+
+    public class MyClass01
+    {
+        public int left { get; set; }
+        public int top { get; set; }
+        public int width { get; set; }
+        public int heigth { get; set; }
     }
 }
