@@ -92,21 +92,22 @@ namespace mirror01
 
 
             // Parse the Json code
-            var myJsonString = "[{Id: 42}]";
+            var myJsonString = "[{Id: 42, age: 22}]";
 
-            var items = JsonConvert.DeserializeObject<List<MyClass>>(myJsonString);
+            var items = JsonConvert.DeserializeObject<List<MyClass02>>(myJsonString);
 
-            string data = "Charlotte";
-
+            string firstItem = items.First().Id.ToString();
 
             // Display response
-            return data;
+            return firstItem;
         }
     }
 
-    public class MyClass
+    public class MyClass02
     {
+        //[JsonProperty("receiver_id")]
         public int Id { get; set; }
-        //public string Name { get; set; }
+        public int age { get; set; }
+
     }
 }
