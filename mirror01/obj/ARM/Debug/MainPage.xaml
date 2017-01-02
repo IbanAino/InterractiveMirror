@@ -11,7 +11,7 @@
         <TextBlock x:ConnectionId='1' x:Name="textBlock" HorizontalAlignment="Left" Margin="81,382,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
         <Button x:ConnectionId='2' x:Name="ClickMe" Content="Click Me!"  Margin="81,128,862,608" HorizontalAlignment="Center"                      />
         <TextBlock x:ConnectionId='3' x:Name="stateButton" HorizontalAlignment="Left" Margin="81,188,0,0" TextWrapping="Wrap" Text="state of the button" VerticalAlignment="Top"/>
-        <TextBlock x:ConnectionId='4' x:Name="textBlock02" HorizontalAlignment="Left" Margin="1000,538,0,0" TextWrapping="Wrap" Text="Emotion Api" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='4' x:Name="textBlock02" HorizontalAlignment="Left" Margin="406,402,0,0" TextWrapping="Wrap" Text="Emotion Api" VerticalAlignment="Top"/>
     </Grid>
 </Page>
 

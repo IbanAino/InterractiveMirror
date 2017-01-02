@@ -22,6 +22,9 @@ using Windows.Graphics.Imaging;
 using Windows.Web.Http;
 using System.Threading.Tasks;
 
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+
 namespace mirror01
 {
 
@@ -48,7 +51,6 @@ namespace mirror01
         {
             string charlotte = "Charlotte";
             string responseToRequest = await MakeRequest(charlotte);
-            //MakeRequest();
 
             int[] emotions = new int [] {anger, contempt, disgust, fear, happiness, neutral, sadness, surprise };
             return emotions;
@@ -76,12 +78,11 @@ namespace mirror01
 
             // Setup http request using content
             Uri apiEndPoint = new Uri("https://api.projectoxford.ai/emotion/v1.0/recognize");
-            //HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, apiEndPoint);
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, apiEndPoint);
             request.Content = streamContent;
 
-            // Do an asynchronous POST.
-            string apiKey = "1dd1f4e23a5743139399788aa30a7153"; //Replace this with your own Microsoft Cognitive Services Emotion API key from https://www.microsoft.com/cognitive-services/en-us/emotion-api. Please do not use my key. I include it here so you can get up and running quickly
+            // Do an asynchronous POST.           
+            string apiKey = "1dd1f4e23a5743139399788aa30a7153";
             HttpClient httpClient = new HttpClient();
             httpClient.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", apiKey);
             HttpResponseMessage response = await httpClient.SendRequestAsync(request).AsTask();
@@ -89,9 +90,23 @@ namespace mirror01
             // Read response
             string responseContent = await response.Content.ReadAsStringAsync();
 
+
+            // Parse the Json code
+            var myJsonString = "[{Id: 42}]";
+
+            var items = JsonConvert.DeserializeObject<List<MyClass>>(myJsonString);
+
+            string data = "Charlotte";
+
+
             // Display response
-            //textBlock.Text = responseContent;
-            return responseContent.ToString();
+            return data;
         }
+    }
+
+    public class MyClass
+    {
+        public int Id { get; set; }
+        //public string Name { get; set; }
     }
 }
